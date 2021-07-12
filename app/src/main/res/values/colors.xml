@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="click">#f5f5f5</color>
+    <color name="colorBackground">#f7f7f7</color><!-- 也面背景色-->
+    <color name="theme_color">#ff7800</color><!-- 主题颜色 橙色-->
+    <color name="user_head_background_oval">#cf6910</color>
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".CycleActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:visibility="gone"
+            android:background="@drawable/selector_onclick"
+            android:src="@mipmap/back_01"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:text="自动切换APP"
+            android:padding="10dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#676767"
+            android:buttonTint="#676767"
+            android:text="抖音极速版"/>
+        <CheckBox
+            android:id="@+id/cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#676767"
+            android:buttonTint="#676767"
+            android:text="快手极速版"/>
+        <CheckBox
+            android:id="@+id/cb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#676767"
+            android:buttonTint="#676767"
+            android:text="火山极速版"/>
+        <CheckBox
+            android:id="@+id/cb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#676767"
+            android:buttonTint="#676767"
+            android:text="抖音火山版"/>
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="固定时间："
+                android:textColor="#676767"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                />
+
+            <EditText
+                android:id="@+id/etTime"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_toRightOf="@+id/tv2"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:inputType="number"
+                android:textColor="#676767"
+                android:gravity="center"
+                android:text="1"
+                />
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/etTime"
+                android:textColor="#676767"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvSure"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:textColor="#676767"
+            android:background="@drawable/textview_onclick"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="55dp"
+
+            android:text="确定" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#676767"
+            android:textSize="16sp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="55dp"
+
+            android:text="提示：将勾选的应用，按您设置的时间间隔自启动，并且自动滑屏播放，请确保选择的app都已经下载安装" />
+
+    </LinearLayout>
+</RelativeLayout>

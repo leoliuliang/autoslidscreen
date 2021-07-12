@@ -1,0 +1,25 @@
+{
+  "pkgs":[
+    {
+      "id": 0,
+      "packagename": "com.ss.android.ugc.aweme.lite",
+      "toastStr": "没有安装抖音极速版"
+    },
+    {
+      "id": 1,
+      "packagename": "com.kuaishou.nebula",
+      "toastStr": "没有安装快手极速版"
+    },
+    {
+      "id": 2,
+      "packagename": "com.ss.android.ugc.livelite",
+      "toastStr": "没有安装火山极速版"
+    },
+    {
+      "id": 3,
+      "packagename": "com.ss.android.ugc.live",
+      "toastStr": "没有安装抖音火山版"
+    }
+  ]
+}
+

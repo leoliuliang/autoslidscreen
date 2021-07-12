@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f7f7"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="自动滑屏"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+        <TextView
+            android:id="@+id/tvHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帮助"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:background="@drawable/selector_onclick"
+            android:textColor="@android:color/white"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="100dp"
+        android:orientation="vertical">
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/btnAccredit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textColor="@android:color/holo_red_light"
+        android:background="@drawable/textview_onclick"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:text="请授权无障碍权限"/>
+
+    <TextView
+        android:id="@+id/tvSet"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textColor="#676767"
+        android:background="@drawable/textview_onclick"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:text="设置时间" />
+
+
+
+        <TextView
+            android:id="@+id/btnStartService"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:textColor="#676767"
+            android:background="@drawable/textview_onclick"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="15dp"
+            android:text="启动" />
+
+    <TextView
+        android:id="@+id/tvDY"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textColor="#676767"
+        android:background="@drawable/textview_onclick"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:text="抖音极速版" />
+
+    <TextView
+        android:id="@+id/tvKS"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textColor="#676767"
+        android:background="@drawable/textview_onclick"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:text="快手极速版" />
+
+    <TextView
+        android:id="@+id/tvHS"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textColor="#676767"
+        android:background="@drawable/textview_onclick"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:text="火山极速版" />
+
+    <TextView
+        android:id="@+id/tvDYHS"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:textColor="#676767"
+        android:background="@drawable/textview_onclick"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        android:text="抖音火山版" />
+
+        <TextView
+            android:id="@+id/tvCycle"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:textColor="#676767"
+            android:background="@drawable/textview_onclick"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="15dp"
+            android:text="循环播放" />
+
+    </LinearLayout>
+    </ScrollView>
+
+    <CheckBox
+        android:id="@+id/rbBF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:button="@null"
+        android:background="@drawable/selector_bf"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"/>
+</LinearLayout>

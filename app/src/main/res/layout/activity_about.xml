@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".AboutActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:background="@drawable/selector_onclick"
+            android:src="@mipmap/back_01"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:text="关于我们"
+            android:padding="10dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvabout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:alpha="0.8"
+        android:layout_margin="50dp"
+        android:textSize="20sp"
+        android:text="        自动滑屏，基于安卓提供的辅助功能，实现在免ROOT情况下模拟滑动手机屏幕的工具型APP。可用以批量进行自动化测试，协助有障碍人员使用手机。"/>
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:alpha="0.8"
+        android:text="版本：v1.1"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+</LinearLayout>
